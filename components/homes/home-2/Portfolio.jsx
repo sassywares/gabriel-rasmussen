@@ -10,6 +10,9 @@ const filters = [
   { name: "Development", category: "development" },
 ];
 
+const enableFilter = false;
+const enableDetails = false;
+
 export default function Portfolio({ desc }) {
   const [currentCategory, setCurrentCategory] = useState("all");
   const [filtered, setFiltered] = useState(portfolios2);
@@ -40,23 +43,25 @@ export default function Portfolio({ desc }) {
             </h2>
           )}
         </div>
-        <div className="col-lg-7 pb-20 pb-md-0 d-flex align-items-end">
-          {/* Works Filter */}
-          <div className="works-filter works-filter-bold text-start text-lg-end w-100">
-            {filters.map((elm, i) => (
-              <a
-                onClick={() => setCurrentCategory(elm.category)}
-                key={i}
-                className={`filter ${
-                  currentCategory == elm.category ? "active" : ""
-                }`}
-              >
-                {elm.name}
-              </a>
-            ))}
+        {enableFilter && (
+          <div className="col-lg-7 pb-20 pb-md-0 d-flex align-items-end">
+            {/* Works Filter */}
+            <div className="works-filter works-filter-bold text-start text-lg-end w-100">
+              {filters.map((elm, i) => (
+                <a
+                  onClick={() => setCurrentCategory(elm.category)}
+                  key={i}
+                  className={`filter ${
+                    currentCategory == elm.category ? "active" : ""
+                  }`}
+                >
+                  {elm.name}
+                </a>
+              ))}
+            </div>
+            {/* End Works Filter */}
           </div>
-          {/* End Works Filter */}
-        </div>
+        )}
       </div>
       {/* Portfolio Grid */}
       <div id="isotope" className="mb-n100 mb-sm-n50">
@@ -73,14 +78,23 @@ export default function Portfolio({ desc }) {
                 <>
                   <div className="col-md-8 mb-sm-30 order-md-first">
                     <div className="portfolio-2-image">
-                      <Link href={`/bold-portfolio-single/${item.id}`}>
+                      {enableDetails ? (
+                        <Link href={`/bold-portfolio-single/${item.id}`}>
+                          <Image
+                            width={1200}
+                            height={819}
+                            src={item.imageUrl}
+                            alt="Image Description"
+                          />
+                        </Link>
+                      ) : (
                         <Image
                           width={1200}
                           height={819}
                           src={item.imageUrl}
                           alt="Image Description"
                         />
-                      </Link>
+                      )}
                     </div>
                   </div>
                   <div className={`col-md-4  `}>
@@ -91,23 +105,25 @@ export default function Portfolio({ desc }) {
                       </Link>
                     </h3>
                     <p className="portfolio-2-descr">{item.description}</p>
-                    <div>
-                      <Link
-                        href={`/bold-portfolio-single/${item.id}`}
-                        className="link-hover-anim underline align-middle"
-                        data-link-animate="y"
-                      >
-                        <span className="link-strong link-strong-unhovered">
-                          View Project
-                        </span>
-                        <span
-                          className="link-strong link-strong-hovered"
-                          aria-hidden="true"
+                    {enableDetails && (
+                      <div>
+                        <Link
+                          href={`/bold-portfolio-single/${item.id}`}
+                          className="link-hover-anim underline align-middle"
+                          data-link-animate="y"
                         >
-                          View Project
-                        </span>
-                      </Link>
-                    </div>
+                          <span className="link-strong link-strong-unhovered">
+                            View Project
+                          </span>
+                          <span
+                            className="link-strong link-strong-hovered"
+                            aria-hidden="true"
+                          >
+                            View Project
+                          </span>
+                        </Link>
+                      </div>
+                    )}
                   </div>{" "}
                 </>
               ) : (
@@ -120,23 +136,25 @@ export default function Portfolio({ desc }) {
                       </Link>
                     </h3>
                     <p className="portfolio-2-descr">{item.description}</p>
-                    <div>
-                      <Link
-                        href={`/bold-portfolio-single/${item.id}`}
-                        className="link-hover-anim underline align-middle"
-                        data-link-animate="y"
-                      >
-                        <span className="link-strong link-strong-unhovered">
-                          View Project
-                        </span>
-                        <span
-                          className="link-strong link-strong-hovered"
-                          aria-hidden="true"
+                    {enableDetails && (
+                      <div>
+                        <Link
+                          href={`/bold-portfolio-single/${item.id}`}
+                          className="link-hover-anim underline align-middle"
+                          data-link-animate="y"
                         >
-                          View Project
-                        </span>
-                      </Link>
-                    </div>
+                          <span className="link-strong link-strong-unhovered">
+                            View Project
+                          </span>
+                          <span
+                            className="link-strong link-strong-hovered"
+                            aria-hidden="true"
+                          >
+                            View Project
+                          </span>
+                        </Link>
+                      </div>
+                    )}
                   </div>{" "}
                   <div
                     className={`col-md-8 mb-sm-30 ${
@@ -144,14 +162,23 @@ export default function Portfolio({ desc }) {
                     } `}
                   >
                     <div className="portfolio-2-image">
-                      <Link href={`/bold-portfolio-single/${item.id}`}>
+                      {enableDetails ? (
+                        <Link href={`/bold-portfolio-single/${item.id}`}>
+                          <Image
+                            width={1200}
+                            height={819}
+                            src={item.imageUrl}
+                            alt="Image Description"
+                          />
+                        </Link>
+                      ) : (
                         <Image
                           width={1200}
                           height={819}
                           src={item.imageUrl}
                           alt="Image Description"
                         />
-                      </Link>
+                      )}
                     </div>
                   </div>{" "}
                 </>

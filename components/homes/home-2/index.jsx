@@ -9,6 +9,9 @@ import Contact from "./Contact";
 import Faq from "./Faq";
 import Link from "next/link";
 import Image from "next/image";
+
+const enableBlog = false;
+
 export default function Home2({ onePage = false, dark = false }) {
   return (
     <>
@@ -43,14 +46,15 @@ export default function Home2({ onePage = false, dark = false }) {
                   <span className="text-outline">About</span>
                 </h2>
                 <p className="section-text mb-60 mb-md-40 mb-sm-30">
-                  <span className="section-title-inline">Who?</span> The role of
-                  the graphic designer in the communication process is that of
-                  encoder or interpreter of&nbsp;the message. They work on the
-                  interpretation, ordering, and presentation of visual messages.
-                  The design work always starts from a client's demand, a demand
-                  that ends up being established linguistically, either orally
-                  or in writing, that is, that graphic design transforms a
-                  linguistic message into a graphic manifestation.
+                  <span className="section-title-inline">Who?</span> As a web
+                  and mobile designer, I bring digital experiences to life
+                  through thoughtful UI/UX. I transform ideas into intuitive
+                  interfaces that users love to interact with. My work starts
+                  with understanding what clients and their users really need,
+                  then crafting designs that are both visually appealing and
+                  functional. I bridge the gap between technical requirements
+                  and user-friendly experiences, turning complex concepts into
+                  clean, accessible digital solutions.
                 </p>
                 <div className="local-scroll">
                   {onePage ? (
@@ -125,9 +129,9 @@ export default function Home2({ onePage = false, dark = false }) {
                 <span className="text-outline">Services</span>
               </h2>
               <p className="section-text mb-60 mb-md-40 mb-sm-30">
-                <span className="section-title-inline">Why?</span> I use the
-                power of design to solve complex problems and cultivate business
-                solutions.
+                <span className="section-title-inline">Why?</span> I harness the
+                art of design to transform complex challenges into elegant
+                business solutions that reflect my unique approach.
               </p>
               <div className="local-scroll">
                 {onePage ? (
@@ -210,17 +214,23 @@ export default function Home2({ onePage = false, dark = false }) {
       >
         <Testimonials />
       </section>
-      <hr
-        className={`${dark ? "white opacity-015" : "black"} black mt-0 mb-0"`}
-      />
-      <section
-        className={`page-section  scrollSpysection  ${
-          dark ? "bg-dark-1 light-content" : ""
-        } `}
-        id="blog"
-      >
-        <Blog />
-      </section>
+      {enableBlog && (
+        <>
+          <hr
+            className={`${
+              dark ? "white opacity-015" : "black"
+            } black mt-0 mb-0"`}
+          />
+          <section
+            className={`page-section  scrollSpysection  ${
+              dark ? "bg-dark-1 light-content" : ""
+            } `}
+            id="blog"
+          >
+            <Blog />
+          </section>
+        </>
+      )}
       <hr
         className={`${dark ? "white opacity-015" : "black"} black mt-0 mb-0"`}
       />

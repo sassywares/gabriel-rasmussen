@@ -23,31 +23,31 @@ export const testimonials2 = [
   {
     id: 1,
     blockquote:
-      "Beautifull template, nice code and easy to customize. Optimization and structure are very good for seo basics.",
+      "Gabriel transformed our outdated website into a modern, responsive masterpiece. His eye for design combined with deep understanding of user experience resulted in a 40% increase in our conversion rate.",
     author: {
-      name: "Adam Peterson",
-      title: "Business Owner",
-      imgSrc: "/assets/images/ts1-user.jpg",
+      name: "Sophia Jensen",
+      title: "Marketing Director",
+      imgSrc: "/assets/images/demo-gradient/user-2.jpg",
     },
   },
   {
     id: 2,
     blockquote:
-      "Beautifull template, nice code and easy to customize. Optimization and structure are very good for seo basics.",
+      "Working with Mr. Rasmussen on our mobile app was a game-changer. His intuitive approach and attention to detail created an interface our users can't get enough of.",
     author: {
-      name: "Adam Peterson",
-      title: "Business Owner",
-      imgSrc: "/assets/images/ts1-user.jpg",
+      name: "Lars Petersen",
+      title: "Product Manager",
+      imgSrc: "/assets/images/demo-fancy/user-3.jpg",
     },
   },
   {
     id: 3,
     blockquote:
-      "Beautifull template, nice code and easy to customize. Optimization and structure are very good for seo basics.",
+      "Gabriel's design work stands out for its perfect balance of aesthetics and functionality. His collaborative approach made the entire process smooth and enjoyable.",
     author: {
-      name: "Adam Peterson",
-      title: "Business Owner",
-      imgSrc: "/assets/images/ts1-user.jpg",
+      name: "Mia Andersen",
+      title: "Creative Director",
+      imgSrc: "/assets/images/demo-fancy/user-4.jpg",
     },
   },
 ];

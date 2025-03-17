@@ -7,12 +7,12 @@ export default function Hero() {
       {/* Home Section Content */}
       <div className="home-content pt-20 pt-md-0 text-center">
         <h2 className="section-title-tiny font-alt mb-40 mb-sm-30 wow fadeInUp">
-          I’m Ronald Smith
+          Gabriel Rasmussen
         </h2>
         <h1 className="hs-title-4 font-alt mb-60 mb-sm-40">
-          <AnimatedText text="Visual & Web Designer" />
+          <AnimatedText text="Web & Mobile Designer" />
           <br />
-          <AnimatedText text=" Based in Melburn." />
+          <AnimatedText text="from Copenhagen." />
         </h1>
         <div
           className="local-scroll wow fadeInUp"
@@ -48,7 +48,7 @@ export default function Hero() {
       {/* End Scroll Down */}
       {/* Status */}
       <div className="hs-status wow fadeInUp" data-wow-offset={0}>
-        Currently UI/UX Designer at Envato
+        Open to new projects
       </div>
       {/* End Status */}
     </div>

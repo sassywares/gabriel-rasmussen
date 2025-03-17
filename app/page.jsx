@@ -8,10 +8,8 @@ import { boldOnepage } from "@/data/menu";
 import ParallaxContainer from "@/components/common/ParallaxContainer";
 
 export const metadata = {
-  title:
-    "Home 2 Main Demo Onepage || Resonance &mdash; One & Multi Page React Nextjs Creative Template",
-  description:
-    "Resonance &mdash; One & Multi Page React Nextjs Creative Template",
+  title: "Gabriel Rasmussen",
+  description: "Web & Mobile designer from the heart of Copenhagen, Denmark",
 };
 
 export default function Home2MainDemoOnepage() {

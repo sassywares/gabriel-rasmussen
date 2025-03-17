@@ -1,23 +1,23 @@
 export const stepsData = [
   {
     number: "1",
-    title: "Research",
-    text: "Lorem ipsum dolor siter amet consectetur adipiscing elit sed do eiusmod tempor incididunt labore dolore magna aliqua.",
+    title: "Discovery",
+    text: "Every project begins with understanding your business goals, target audience, and brand identity. This discovery phase establishes a strategic foundation for all design decisions.",
   },
   {
     number: "2",
-    title: "Design",
-    text: "Fusce pretium turpis pharetra orci sodales auctor. Aliquam eget felis mi. Maecenas malesuada non purus at sollicitudin.",
+    title: "Concept",
+    text: "Translating research into visual concepts that capture your brand essence. Each concept is crafted with meticulous attention to detail, focusing on both aesthetics and user experience.",
   },
   {
     number: "3",
-    title: "Development",
-    text: "Vivamus at leo a felis ullamcorper consectetur elementum urna enim sagittis. Fusce hendrerit dolor sed nisi ultricies congue.",
+    title: "Refinement",
+    text: "Iterative improvement based on your feedback ensures the design evolves to perfectly match your vision while maintaining usability principles and visual harmony.",
   },
   {
     number: "4",
-    title: "Production",
-    text: "Aliquam viverra tempus consequat vivamus sed turpis tempu euismod nibh et, euismod lorem iaculis feugiat elit ipsum dolor sit amet.",
+    title: "Delivery",
+    text: "The final design assets are prepared with comprehensive documentation and guidance for implementation, ensuring your vision is executed flawlessly by your development team.",
   },
 ];
 

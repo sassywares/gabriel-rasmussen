@@ -11,6 +11,7 @@ export default function Testimonials() {
         <div className="col-lg-11">
           <div className="relative">
             <Swiper
+              loop
               spaceBetween={0}
               slidesPerView={1}
               modules={[Navigation]}
@@ -40,23 +41,20 @@ export default function Testimonials() {
                           alt=""
                         />
                       </div>
-                      <p>
-                        Beautifull template, nice code and easy to customize.
-                        Optimization and structure are very good for seo basics.
-                      </p>
+                      <p>{elm.blockquote}</p>
                       <footer className="ts2-author mt-50 mt-xs-30 clearfix">
                         <div className="ts2-author-img float-start">
                           <Image
                             className="rounded-circle"
                             width={44}
                             height={44}
-                            src="/assets/images/ts1-user.jpg"
-                            alt="Image description is here"
+                            src={elm.author.imgSrc}
+                            alt={elm.author.name}
                           />
                         </div>
                         <div className="overflow-hidden">
-                          Adam Peterson
-                          <div className="small">Business Owner</div>
+                          {elm.author.name}
+                          <div className="small">{elm.author.title}</div>
                         </div>
                       </footer>
                     </blockquote>

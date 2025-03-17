@@ -144,45 +144,45 @@ export const portfolios2 = [
   {
     id: 15,
     imageUrl: "/assets/images/demo-bold/portfolio/1.jpg",
-    title: "Medium Scene",
+    title: "Evergreen Brand Identity",
     description:
-      "Lorem ipsum dolor siter amet consectetur adipiscing elit sed do eiusmod tempor incididunt labore dolore magna aliqua.",
-    link: "bold-portfolio-single.html",
-    categories: ["development"],
-  },
-  {
-    id: 16,
-    imageUrl: "/assets/images/demo-bold/portfolio/2.jpg",
-    title: "Rise of Design",
-    description:
-      "Proin elementum ipsum vel mauris pellentesque accumsan. Nulla in erat ligula vivamus sed egestas elit, sit amet convallis metus.",
+      "Complete brand identity design for an eco-friendly startup, including logo design, color palette, typography system, and brand guidelines to establish a cohesive market presence.",
     link: "bold-portfolio-single.html",
     categories: ["branding"],
   },
   {
+    id: 16,
+    imageUrl: "/assets/images/demo-bold/portfolio/2.jpg",
+    title: "Lumière Fine Dining Experience",
+    description:
+      "Elegant website design for a high-end restaurant featuring immersive photography, intuitive reservation system, and responsive design that captures the essence of fine dining.",
+    link: "bold-portfolio-single.html",
+    categories: ["design", "development"],
+  },
+  {
     id: 17,
     imageUrl: "/assets/images/demo-bold/portfolio/3.jpg",
-    title: "Visual Stranger",
+    title: "Brew Nostalgia Mobile App",
     description:
-      "Suspendisse scelerisque convallis nibh. Maecenas bibendum porta mattis. Donec quis nibh porta dolor ultrices bibendum vel quis leo.",
+      "Retro-inspired mobile application for a vintage coffee shop chain with location-based services, loyalty program integration, and a nostalgic UI that enhances the brand experience.",
     link: "bold-portfolio-single.html",
     categories: ["design", "development"],
   },
   {
     id: 18,
     imageUrl: "/assets/images/demo-bold/portfolio/4.jpg",
-    title: "Amplitude",
+    title: "Amplitude E-Learning Platform",
     description:
-      "Aliquam tempus nunc nec rutrum malesuada. Proin pulvinar augue quis pharetra vulputate. Sed lacinia convallis orci vitae condimentum.",
+      "Comprehensive learning management system with interactive course modules, progress tracking, and gamification elements designed to increase student engagement and knowledge retention.",
     link: "bold-portfolio-single.html",
     categories: ["branding", "design"],
   },
   {
     id: 19,
     imageUrl: "/assets/images/demo-bold/portfolio/5.jpg",
-    title: "Super Awards",
+    title: "Wellness Journey Health App",
     description:
-      "Praesent est lacus, fringilla et justo vel, scelerisque aliquet elit. Mauris malesuada eleifend sapien irere semper a orci ac turpis luctus.",
+      "Holistic health application featuring personalized fitness tracking, nutrition planning, and meditation guides with an intuitive interface designed to promote user wellbeing and daily engagement.",
     link: "bold-portfolio-single.html",
     categories: ["design", "development"],
   },
