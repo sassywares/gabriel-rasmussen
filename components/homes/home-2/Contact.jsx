@@ -29,7 +29,10 @@ export default function Contact({ heading }) {
           {/* Contact Form */}
           <form
             id="contact_form"
-            onSubmit={(e) => e.preventDefault()}
+            onSubmit={(e) => {
+              e.preventDefault();
+              alert("Thank you for reaching out, I'll get back to you soon.");
+            }}
             className="form contact-form wow fadeInUp"
           >
             {/* Name */}
