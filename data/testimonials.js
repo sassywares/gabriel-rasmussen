@@ -27,7 +27,7 @@ export const testimonials2 = [
     author: {
       name: "Sophia Jensen",
       title: "Marketing Director",
-      imgSrc: "/assets/images/demo-gradient/user-2.jpg",
+      imgSrc: "/assets/images/testimonials/sophia-jensen.png",
     },
   },
   {
@@ -37,7 +37,7 @@ export const testimonials2 = [
     author: {
       name: "Lars Petersen",
       title: "Product Manager",
-      imgSrc: "/assets/images/demo-fancy/user-3.jpg",
+      imgSrc: "/assets/images/testimonials/lars-petersen.png",
     },
   },
   {
@@ -47,7 +47,7 @@ export const testimonials2 = [
     author: {
       name: "Mia Andersen",
       title: "Creative Director",
-      imgSrc: "/assets/images/demo-fancy/user-4.jpg",
+      imgSrc: "/assets/images/testimonials/mia-andersen.png",
     },
   },
 ];

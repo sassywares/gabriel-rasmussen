@@ -21,18 +21,11 @@ export default function Header2({ links }) {
       <div className="nav-logo-wrap local-scroll">
         <Link href="/" className="logo font-alt">
           <Image
-            src="/assets/images/logo-dark.svg"
+            src="/assets/images/favicon.png"
             alt="Your Company Logo"
-            width={105}
-            height={34}
-            className="light-mode-logo"
-          />
-          <Image
-            src="/assets/images/logo-white.svg"
-            alt="Your Company Logo"
-            width={105}
-            height={34}
-            className="dark-mode-logo"
+            style={{ maxHeight: "auto" }}
+            width={50}
+            height={50}
           />
         </Link>
       </div>

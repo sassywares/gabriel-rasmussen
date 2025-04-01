@@ -28,9 +28,9 @@ export default function Home2({ onePage = false, dark = false }) {
                 <Image
                   width={800}
                   height={1095}
-                  src="/assets/images/demo-bold/section-image-1.jpg"
+                  src="/assets/images/gabriel-rasmussen.webp"
                   className="w-100 wow scaleOutIn"
-                  alt="Image Description"
+                  alt="Gabriel Rasmussen"
                 />
               </div>
             </div>

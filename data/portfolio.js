@@ -143,7 +143,7 @@ export const portfolios1 = [
 export const portfolios2 = [
   {
     id: 15,
-    imageUrl: "/assets/images/demo-bold/portfolio/1.jpg",
+    imageUrl: "/assets/images/portfolio/evergreen.png",
     title: "Evergreen Brand Identity",
     description:
       "Complete brand identity design for an eco-friendly startup, including logo design, color palette, typography system, and brand guidelines to establish a cohesive market presence.",
@@ -152,7 +152,7 @@ export const portfolios2 = [
   },
   {
     id: 16,
-    imageUrl: "/assets/images/demo-bold/portfolio/2.jpg",
+    imageUrl: "/assets/images/portfolio/lumiere.png",
     title: "Lumière Fine Dining Experience",
     description:
       "Elegant website design for a high-end restaurant featuring immersive photography, intuitive reservation system, and responsive design that captures the essence of fine dining.",
@@ -161,7 +161,7 @@ export const portfolios2 = [
   },
   {
     id: 17,
-    imageUrl: "/assets/images/demo-bold/portfolio/3.jpg",
+    imageUrl: "/assets/images/portfolio/brew-nostalgia.png",
     title: "Brew Nostalgia Mobile App",
     description:
       "Retro-inspired mobile application for a vintage coffee shop chain with location-based services, loyalty program integration, and a nostalgic UI that enhances the brand experience.",
@@ -170,7 +170,7 @@ export const portfolios2 = [
   },
   {
     id: 18,
-    imageUrl: "/assets/images/demo-bold/portfolio/4.jpg",
+    imageUrl: "/assets/images/portfolio/amplitude.png",
     title: "Amplitude E-Learning Platform",
     description:
       "Comprehensive learning management system with interactive course modules, progress tracking, and gamification elements designed to increase student engagement and knowledge retention.",
@@ -179,7 +179,7 @@ export const portfolios2 = [
   },
   {
     id: 19,
-    imageUrl: "/assets/images/demo-bold/portfolio/5.jpg",
+    imageUrl: "/assets/images/portfolio/wellness-journey.png",
     title: "Wellness Journey Health App",
     description:
       "Holistic health application featuring personalized fitness tracking, nutrition planning, and meditation guides with an intuitive interface designed to promote user wellbeing and daily engagement.",
