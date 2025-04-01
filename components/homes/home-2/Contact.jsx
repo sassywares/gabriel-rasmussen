@@ -28,13 +28,17 @@ export default function Contact({ heading }) {
     alert("Thank you for reaching out, I'll get back to you soon.");
 
     try {
-      await fetch("https://api.sassywares.com/contact", {
+      await fetch("https://api.sassywares.com/v1/contact", {
         body: JSON.stringify({
           name,
           email,
           message,
         }),
         method: "POST",
+        headers: {
+          "X-Source": "gabriel-rasmussen",
+          "Content-Type": "application/json",
+        },
       });
     } catch (error) {
       console.error(error);
