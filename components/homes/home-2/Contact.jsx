@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 export default function Contact({ heading }) {
   async function onFormSubmit(e) {
     e.preventDefault();
@@ -144,10 +146,11 @@ export default function Contact({ heading }) {
                 <div className="form-tip pt-30 pt-sm-20">
                   <i className="icon-info size-16" />
                   All the fields are required. By sending the form you agree to
-                  the <a href="/terms-and-conditions">
+                  the{" "}
+                  <Link href="/terms-and-conditions">
                     Terms and Conditions
-                  </a>{" "}
-                  and <a href="/privacy-policy">Privacy Policy</a>.
+                  </Link>{" "}
+                  and <Link href="/privacy-policy">Privacy Policy</Link>.
                 </div>
               </div>
             </div>
