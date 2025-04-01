@@ -1,14 +1,7 @@
 "use client";
+
 import { toggleMobileMenu } from "@/utlis/toggleMobileMenu";
 import Nav from "./components/Nav";
-
-const links = [
-  { href: "#home", text: "Home", className: "active" },
-  { href: "#about", text: "About" },
-  { href: "#services", text: "Services" },
-  { href: "#portfolio", text: "Portfolio" },
-  { href: "#contact", text: "Contact" },
-];
 import Image from "next/image";
 import Link from "next/link";
 
@@ -46,21 +39,21 @@ export default function Header2({ links }) {
         </ul>
         <ul className="items-end clearlist local-scroll">
           <li>
-            <a href="#contact" className="opacity-1 no-hover">
+            <Link href="/#contact" className="opacity-1 no-hover">
               <span
                 className="btn btn-mod btn-small btn-border btn-border-white btn-circle ttn"
                 data-btn-animate="y"
               >
                 <span className="btn-animate-y">
                   <span className="btn-animate-y-1">
-                    Let’s talk{" "}
+                    Let's talk{" "}
                     <i
                       className="icon-arrow-right1 size-16"
                       aria-hidden="true"
                     ></i>
                   </span>
                   <span className="btn-animate-y-2" aria-hidden="true">
-                    Let’s talk{" "}
+                    Let's talk{" "}
                     <i
                       className="icon-arrow-right1 size-16"
                       aria-hidden="true"
@@ -68,7 +61,7 @@ export default function Header2({ links }) {
                   </span>
                 </span>
               </span>
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
