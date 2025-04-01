@@ -1,6 +1,46 @@
 "use client";
 
 export default function Contact({ heading }) {
+  async function onFormSubmit(e) {
+    e.preventDefault();
+
+    const formData = new FormData(e.target);
+
+    const name = formData.get("name");
+    const email = formData.get("email");
+    const message = formData.get("message");
+
+    if (!name) {
+      alert("Please enter your name");
+      return;
+    }
+
+    if (!email) {
+      alert("Please enter your email");
+      return;
+    }
+
+    if (!message) {
+      alert("Please enter your message");
+      return;
+    }
+
+    alert("Thank you for reaching out, I'll get back to you soon.");
+
+    try {
+      await fetch("https://api.sassywares.com/contact", {
+        body: JSON.stringify({
+          name,
+          email,
+          message,
+        }),
+        method: "POST",
+      });
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
   return (
     <div className="container">
       <div className="row">
@@ -17,22 +57,15 @@ export default function Contact({ heading }) {
             </span>
           </h2>
           <p className="section-text mb-60 mb-md-40 mb-sm-30">
-            <span className="section-title-inline">How?</span> Have a question?
-            Reach me out at{" "}
-            <a href="mailto:gabriel.rasmussen@gmail.com">
-              gabriel.rasmussen@gmail.com
-            </a>{" "}
-            or the contact form right here.
+            <span className="section-title-inline">How?</span> Have a question
+            or a plan to work together? Reach me out and I'll respond ASAP.
           </p>
         </div>
         <div className="col-lg-7 col-xl-6 offset-xl-1 pt-30 pt-md-0">
           {/* Contact Form */}
           <form
             id="contact_form"
-            onSubmit={(e) => {
-              e.preventDefault();
-              alert("Thank you for reaching out, I'll get back to you soon.");
-            }}
+            onSubmit={onFormSubmit}
             className="form contact-form wow fadeInUp"
           >
             {/* Name */}
@@ -106,8 +139,11 @@ export default function Contact({ heading }) {
                 {/* Inform Tip */}
                 <div className="form-tip pt-30 pt-sm-20">
                   <i className="icon-info size-16" />
-                  All the fields are required. By sending the form you agree
-                  that you're submitting this information by consent.
+                  All the fields are required. By sending the form you agree to
+                  the <a href="/terms-and-conditions">
+                    Terms and Conditions
+                  </a>{" "}
+                  and <a href="/privacy-policy">Privacy Policy</a>.
                 </div>
               </div>
             </div>
