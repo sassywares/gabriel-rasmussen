@@ -30,7 +30,7 @@ export default function Contact({ heading }) {
     alert("Thank you for reaching out, I'll get back to you soon.");
 
     try {
-      await fetch("https://api.sassywares.com/v1/contact", {
+      await fetch("https://api.sassywares.com/contact", {
         body: JSON.stringify({
           name,
           email,
