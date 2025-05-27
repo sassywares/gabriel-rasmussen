@@ -1,5 +1,6 @@
 "use client";
 
+import { config } from "@/config";
 import Link from "next/link";
 
 export default function Contact({ heading }) {
@@ -30,18 +31,20 @@ export default function Contact({ heading }) {
     alert("Thank you for reaching out, I'll get back to you soon.");
 
     try {
-      await fetch("https://api.sassywares.com/contact", {
-        body: JSON.stringify({
-          name,
-          email,
-          message,
-        }),
-        method: "POST",
-        headers: {
-          "X-Source": "gabriel-rasmussen",
-          "Content-Type": "application/json",
-        },
-      });
+      await fetch(
+        `https://api.sassywares.com/contact?referrerId=${config.id}&formTypeId=${config.formTypeIds.contactForm}`,
+        {
+          body: JSON.stringify({
+            name,
+            email,
+            message,
+          }),
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
     } catch (error) {
       console.error(error);
     }
