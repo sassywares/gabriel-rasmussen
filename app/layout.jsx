@@ -4,7 +4,7 @@ import "swiper/css";
 import "../public/assets/css/styles.css";
 import "jarallax/dist/jarallax.min.css";
 import "swiper/css/effect-fade";
-
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "photoswipe/dist/photoswipe.css";
 import { usePathname } from "next/navigation";
 import { parallaxMouseMovement, parallaxScroll } from "@/utlis/parallax";
@@ -70,6 +70,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className="appear-animate body">{children}</body>
+      <GoogleAnalytics gaId="G-T9XB58MYJT" />
     </html>
   );
 }

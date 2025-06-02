@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/third-parties": "^15.3.3",
     "@popperjs/core": "2.11.8",
     "bootstrap": "^5.1.3",
     "imagesloaded": "^5.0.0",
