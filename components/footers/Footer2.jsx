@@ -54,6 +54,18 @@ export default function Footer2() {
             </a>
           </div>
         </div>
+        <div className="row">
+          <div className="col-12 text-center text-lg-start mb-md-50 d-flex align-items-center justify-content-end mt-5 gap-2">
+            Made with ❤️ by{" "}
+            <a href="https://sassywares.com" target="_blank" rel="noopener">
+              <img
+                src="https://storage.sassywares.com/badge.png"
+                alt="sassywares creative web design development agency"
+                width="150"
+              />
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );
